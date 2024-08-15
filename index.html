@@ -9,10 +9,11 @@
   <script src="https://unpkg.com/mustache@latest"></script>
 </head>
 <body>
-  <button hx-ext="client-side-templates" hx-get="https://n-essio.github.io/data/users.json"
+  <button hx-ext="client-side-templates" 
+            hx-get="https://n-essio.github.io/data/users.json"
             hx-swap="innerHTML"
             hx-target="#content"
-            mustache-array-template="foo"> prova </button>
+            mustache-array-template="foo">prova</button>
     <p id="content"></p>
    <template id="foo">
       {{#data}}
