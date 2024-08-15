@@ -25,7 +25,7 @@
     mustache-array-template="foo"></div>
   <p id="content"></p>
   <div hx-ext="path-params">
-    <a hx-get="/data/users.json?page=2&search=meatball" hx-vals='{"page": "3"}'>Next</a>
+    <a hx-get="/data/users.json?page=2&search=meatball" hx-vals='{"page": "3"}' hx-swap="innerHTML" hx-target="#content" mustache-array-template="foo">Next</a>
   </div>
    <template id="foo">
       {{#data}}
