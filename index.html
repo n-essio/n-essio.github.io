@@ -25,7 +25,13 @@
   <p id="content"></p>
    <template id="foo">
       {{#data}}
-      <p> {{name}} at {{email}} is with {{company.name}}</p>
+      id: {{id}} <br/>
+      name: {{name}} <br/>
+      username: {{username}} <br/>
+      email: {{email}} <br/>
+      address street: {{address.street}} <br/>
+      lat: {{address.geo.lat}} <br/>
+      lng: {{address.geo.lng}} <br/>
       {{/data}}
   </template>
 </body>
