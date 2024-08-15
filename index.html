@@ -11,21 +11,21 @@
 </head>
 <body>
   <button hx-ext="client-side-templates" 
-            hx-get="https://n-essio.github.io/data/users.json"
+            hx-get="/data/users.json"
             hx-swap="innerHTML"
             hx-target="#content"
             mustache-array-template="foo">prova</button>
   <div 
     hx-ext="client-side-templates" 
     hx-params="*"
-    hx-get="https://n-essio.github.io/data/users.json" 
+    hx-get="/data/users.json" 
     hx-trigger="load"
     hx-swap="innerHTML"
     hx-target="#content"
     mustache-array-template="foo"></div>
   <p id="content"></p>
   <div hx-ext="path-params">
-    <a hx-get="/product?page=2&search=meatball" hx-vals='{"page": "3"}'>Next</a>
+    <a hx-get="/data/users.json?page=2&search=meatball" hx-vals='{"page": "3"}'>Next</a>
   </div>
    <template id="foo">
       {{#data}}
