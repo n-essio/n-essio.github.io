@@ -7,11 +7,6 @@
   <script src="https://unpkg.com/htmx.org"></script>
   <script src="https://unpkg.com/htmx-ext-client-side-templates@2.0.0/client-side-templates.js"></script>
   <script src="https://unpkg.com/mustache@latest"></script>
-  <template id="foo">
-      {{#data}}
-      <p> {{name}} at {{email}} is with {{company.name}}</p>
-      {{/data}}
-    </template>
 </head>
 <body>
   <div hx-ext="client-side-templates" hx-get="https://n-essio.github.io/data/users.json"
@@ -20,5 +15,10 @@
             mustache-array-template="foo">
     <p id="content"></p>
   </div>
+   <template id="foo">
+      {{#data}}
+      <p> {{name}} at {{email}} is with {{company.name}}</p>
+      {{/data}}
+  </template>
 </body>
 </html>
