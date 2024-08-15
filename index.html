@@ -15,7 +15,7 @@
             hx-target="#content"
             mustache-array-template="foo">prova</button>
     <p id="content"></p>
-  <div hx-get="/news" hx-trigger="every 2s"></div>
+  <div hx-get="https://n-essio.github.io/data/users.json" hx-trigger="every 2s"></div>
    <template id="foo">
       {{#data}}
       <p> {{name}} at {{email}} is with {{company.name}}</p>
